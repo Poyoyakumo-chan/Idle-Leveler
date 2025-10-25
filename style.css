@@ -9,8 +9,9 @@ body {
 }
 
 #gameContainer {
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
+  position: relative;
 }
 
 #stats p {
@@ -27,10 +28,36 @@ body {
   background: #00ccff;
   color: #222;
   box-shadow: 0 0 10px #00ccff;
+  transition: transform 0.1s;
+}
+
+#gainBtn:active {
+  transform: scale(0.95);
 }
 
 #message {
   font-size: 1.2rem;
   margin-top: 20px;
   color: #ff0;
+}
+
+#characterContainer {
+  margin-top: 20px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+#character {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+#particleCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  pointer-events: none;
 }
