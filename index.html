@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>放置レベルアップゲーム</title>
+  <title>Idle Hero - 放置育成ゲーム</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="gameContainer">
-    <h1>放置レベルアップゲーム</h1>
+    <h1>Idle Hero</h1>
     <div id="stats">
       <p id="level">レベル: 1</p>
       <p id="xp">経験値: 0 / 10</p>
+    </div>
+    <div id="characterContainer">
+      <img id="character" src="character1.png" alt="Hero">
+      <canvas id="particleCanvas"></canvas>
     </div>
     <button id="gainBtn">経験値を得る</button>
     <p id="message"></p>
